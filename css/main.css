@@ -41,40 +41,23 @@ span::selection {
     position: relative;
     height: 100vh;
 }
-.arrow {
-    position: absolute;
+.arrow--erster {
     bottom:120px;left:50%;
-    width:30px;height:30px;
-    background-color: transparent;
-    text-shadow: 0 0 20px;
-    border-top:3px solid rgba(255, 255, 255, 0.6);
-    border-left: 3px solid rgba(255, 255, 255, 0.6);
-    transform: rotateZ(45deg);
-    padding-left: -27px;
-    padding-top:-27px;
-}
-.arrow:hover {
-    background-color: transparent;
-    border-color: red;
-    /* margin-bottom:-20px;
-    margin-right:-20px; */
-    /* bottom:30px; */
+    transform: translate(-50%)rotate(-45deg) ;
 }
 .arrow--zweiter {
-    position: absolute;
     bottom:40px;left:50%;
-    width:30px;height:30px;
-    background-color: transparent;
-    border-bottom:3px solid rgba(255, 255, 255, 0.6);
-    border-right: 3px solid rgba(255, 255, 255, 0.6);
-    transform: rotateZ(45deg);
-    padding-left: -27px;
-    padding-top:-27px;
+    transform: translate(-50%, -100%) rotate(135deg);
 }
-.arrow--zweiter:hover {
-    background-color: transparent;
+.arrow--erster, .arrow--zweiter {
+    position: absolute;
+    width:30px;height:30px;
+    /* background-color: transparent; */
+    border-top:3px solid rgba(255, 255, 255, 0.6);
+    border-right: 3px solid rgba(255, 255, 255, 0.6);
+    transform: ;
+}
+.arrow--erster:hover, .arrow--zweiter:hover {
     border-color: red;
-    /* margin-bottom:-20px;
-    margin-right:-20px; */
-    /* bottom:30px; */
+    /* background-color: transparent; */
 }
